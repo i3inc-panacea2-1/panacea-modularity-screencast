@@ -15,6 +15,5 @@ namespace Panacea.Modularity.ScreenCast
         public float Volume { get; set; }
         public double Duration { get; set; }
         public int HashCode { get; set; }
-
     }
 }

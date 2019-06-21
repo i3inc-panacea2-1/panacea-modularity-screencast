@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IScreenCastPlayer.cs" />
     <Compile Include="IScreenCastPlugin.cs" />
+    <Compile Include="MediaPlayerMessage.cs" />
     <Compile Include="PanaceaServicesExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
