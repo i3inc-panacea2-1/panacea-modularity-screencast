@@ -13,16 +13,10 @@ namespace Panacea.Modularity.ScreenCast
         {
             return core.PluginLoader.GetPlugin<IScreenCastPlugin>();
         }
-        public static bool TryGetScreenCast(this PanaceaServices core, out IScreenCastPlugin plugin)
+        public static bool TryGetScreenCast(this PanaceaServices core, out IScreenCastPlayer screencast)
         {
-            plugin = null;
-            var screenCastPlugin = core.PluginLoader.GetPlugins<IScreenCastPlugin>().FirstOrDefault();
-            if (screenCastPlugin == null)
-            {
-                return false;
-            }
-            plugin = screenCastPlugin;
-            return true;
+            screencast = core.PluginLoader.GetPlugins<IScreenCastPlugin>().FirstOrDefault()?.GetScreenCastPlayer();
+            return screencast != null;
         }
     }
 }
