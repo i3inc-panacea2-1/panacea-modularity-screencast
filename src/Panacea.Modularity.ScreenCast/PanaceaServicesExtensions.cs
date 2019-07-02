@@ -13,7 +13,7 @@ namespace Panacea.Modularity.ScreenCast
         {
             return core.PluginLoader.GetPlugin<IScreenCastPlugin>();
         }
-        public static bool TryGetWebBrowser(this PanaceaServices core, out IScreenCastPlugin plugin)
+        public static bool TryGetScreenCast(this PanaceaServices core, out IScreenCastPlugin plugin)
         {
             plugin = null;
             var screenCastPlugin = core.PluginLoader.GetPlugins<IScreenCastPlugin>().FirstOrDefault();
