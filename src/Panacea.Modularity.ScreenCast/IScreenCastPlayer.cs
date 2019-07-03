@@ -6,5 +6,7 @@ namespace Panacea.Modularity.ScreenCast
     {
         void Play(MediaItem media);
         void SetVolume(int value);
+
+        int Volume { get; }
     }
 }
