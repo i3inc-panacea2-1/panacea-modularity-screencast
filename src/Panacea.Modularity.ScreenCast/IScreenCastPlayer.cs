@@ -1,4 +1,5 @@
 ﻿using Panacea.Modularity.Media;
+using System;
 
 namespace Panacea.Modularity.ScreenCast
 {
@@ -8,5 +9,7 @@ namespace Panacea.Modularity.ScreenCast
         void SetVolume(int value);
 
         int Volume { get; }
+
+        event EventHandler VolumeChanged;
     }
 }
